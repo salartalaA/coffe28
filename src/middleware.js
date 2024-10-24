@@ -10,7 +10,7 @@ export async function middleware(req) {
 
   try {
     const response = await fetch(
-      "http://localhost:3004/coffe/users/verifyToken",
+      "http://localhost:3004/api/users/verifyToken",
       {
         headers: {
           Authorization: `Bearer ${token.value}`,
